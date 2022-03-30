@@ -18,3 +18,5 @@ build
 
 *.log
 *.code-workspace
+demo/demo_anton.ipynb
+tb_logs/
