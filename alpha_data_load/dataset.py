@@ -43,7 +43,7 @@ class Dataset(object):
                 stop = len(self.indexes)
             else:
                 stop = idx.stop
-            return list(map(self.__getitem__, range(start, stop)))
+            return self.data[self.indexes[start:stop]]
         if idx > len(self.indexes):
             raise KeyError(f'Index {idx} not in self.indexes')
         return self.data[self.indexes[idx]]
